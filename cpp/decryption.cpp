@@ -51,7 +51,7 @@ void dictionaryAtack(const std::string& ciphertext, const bool& punctuation, con
 
 void decrypt(std::string& ciphertext, const std::string& key, const bool& punctuation, const bool& reversed, const bool& dictAtack)
 {
-	if (key.size() == 0)
+	if (key.size() != 0)
 	{
 		std::string decryptedMessage = keyDecrypt(ciphertext, key, punctuation, reversed);
 		std::cout << decryptedMessage << "\n";

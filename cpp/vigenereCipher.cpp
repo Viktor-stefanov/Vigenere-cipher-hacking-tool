@@ -22,7 +22,7 @@ int main(int argc, char* argv[])
 			reversed = true;
 		else if (argument.substr(0, 2).find_first_of('p') != std::string::npos)
 			punctuation = true;
-		else if (argument.substr(0, 2).find("da") != std::string::npos)
+		else if (argument.substr(0, 3).find("da") != std::string::npos)
 			dictionaryAtack = true;
 		else if (argument.substr(0, 2).find_first_of('d') != std::string::npos)
 			decryption = true;
